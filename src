@@ -1,0 +1,39 @@
+import java.util.Scanner;
+/* Import a Scanner, a Scanner is a class in java.util package used for asking the user to enter a input. This can be 
+used for the primitive types like int, double, and strings.*/
+
+public class Convert_Fehrenheit_to_Celcius
+
+public static void main (String [] args) {
+
+  Scanner x = new Scanner(System.in);
+  //create a variable for the user.
+  
+	//since you will be using decimals, you will need to use "double", if you want whole numbers only, use "int"
+	double f, c;
+  // int f, c; ------> you would use this for a whole number, that has no decimals. 
+	
+	System.out.println("Enter Fehrenheit");
+  /*ask the user for a input for the variable you entered earlier. 
+  in this case you're asking the user for a number to be entered in x. */
+  
+	f = x.nextDouble();
+  // f=x.nextInt(); ------> if you decided to use in instead of double you would write this. 
+	
+	c =  5*(f-32)/9;
+  //formula to convert Fahrenheit to Celcius
+	
+	System.out.println("It is "  + String.format("%.2f" , c) + " Celcius outside");
+  /* You are write out a message, along with the result of your calculation. Also you wrote " +
+  String.format("%.2f" , c)" to write your result in 2 deciaml places. if you want it in X amount decimal places 
+  simply write "+ String.format("%.Xf" , c)" */
+  
+  /* System.out.println("It is " +c + " Celcius outside"); -------- this would be used if you 
+  decided to use "int" instead of "double" */
+	
+	x.close();
+  //close your variable. this you must always do this when youre done using a variable.
+	
+}
+}
+
