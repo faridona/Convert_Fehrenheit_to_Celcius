@@ -2,7 +2,7 @@ import java.util.Scanner;
 /* Import a Scanner, a Scanner is a class in java.util package used for asking the user to enter a input. This can be 
 used for the primitive types like int, double, and strings.*/
 
-public class Convert_Fehrenheit_to_Celcius
+public class Convert_Fehrenheit_to_Celcius {
 
 public static void main (String [] args) {
 
